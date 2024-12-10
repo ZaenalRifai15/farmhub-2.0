@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beranda</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/beranda.css' %}">
+</head>
+<body>
+    <header>
+        <div class="menu-icon">
+            <span>&#9776;</span>
+        </div>
+        <div id="user-location">Sukajadi, Bandung</div>
+        <div class="notification-icon">
+            <span>&#128276;</span>
+        </div>
+    </header>
+    <main>
+        <section class="welcome">
+            <h2>Hallo, <span id="user-name">user</span></h2>
+            <p>Selamat datang di FarmHub.</p>
+            <input type="text" placeholder="Cari yang kamu perlukan" id="search-bar">
+        </section>
+
+        <section class="product-section">
+            <h3>Terdekat <a href="#" class="see-all">Lihat Semua</a></h3>
+            <div class="product-grid" id="terdekat-products"></div>
+        </section>
+
+        <section class="product-section">
+            <h3>Paling Laku <a href="#" class="see-all">Lihat Semua</a></h3>
+            <div class="product-grid" id="paling-laku-products"></div>
+        </section>
+    </main>
+</body>
+{% comment %} <script src="script-beranda.js"></script> {% endcomment %}
+</html>
