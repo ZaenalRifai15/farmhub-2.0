@@ -1,0 +1,34 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deskripsi Produk</title>
+    <link rel="stylesheet" href="{% static 'app/css/produk.css' %}">
+<body>
+    <header>
+        <div class="back-button" onclick="goBack()">
+            &#8592; Kembali
+        </div>
+        <h1>Detail Produk</h1>
+    </header>
+    <main>
+        <section class="product-detail">
+            <img id="product-image" src="" alt="Produk">
+            <h2 id="product-name">Nama Produk</h2>
+            <p id="product-weight">Berat Produk</p>
+            <p id="product-price">Harga</p>
+            <p id="product-description">Deskripsi lengkap produk akan ditampilkan di sini.</p>
+        </section>
+        <section class="seller-info">
+            <h3>Informasi Penjual</h3>
+            <p><strong id="seller-name">Nama Penjual</strong></p>
+            <p id="seller-location">Lokasi Penjual</p>
+        </section>
+        <button id="buy-button">Beli Sekarang</button>
+    </main>
+    <script src="script-deskripsi-produk.js"></script>
+</body>
+</html>

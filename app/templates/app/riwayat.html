@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riwayat</title>
+    <link rel="stylesheet" href="styles-riwayat.css">
+    <script defer src="script-riwayat.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Riwayat</h1>
+        </header>
+        <div class="search-bar">
+            <input type="text" placeholder="Cari riwayat transaksi" id="search">
+            <select id="filter-date">
+                <option value="all">Semua Tanggal</option>
+                <option value="today">Hari Ini</option>
+                <option value="this-week">Minggu Ini</option>
+                <option value="this-month">Bulan Ini</option>
+            </select>
+        </div>
+        <div class="riwayat-list" id="riwayat-list">
+            <!-- engke data na di asupkeun secara dinamis ku JavaScript -->
+        </div>
+    </div>
+</body>
+</html>
