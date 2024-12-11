@@ -1,7 +1,6 @@
 from django.db import models
 
 # Create your models here.
-<<<<<<< HEAD
 class Pengguna(models.Model):
     nama = models.CharField(max_length=250)
     no_telpon = models.CharField(max_length=12)
@@ -11,6 +10,3 @@ class Pengguna(models.Model):
 
     def __str__(self):
         return f"{self.email} ({self.password})"
-=======
-
->>>>>>> 9733cd9a74ec79d05901058397170f243e0a3a51
