@@ -11,10 +11,11 @@ class Pengguna(models.Model):
     def __str__(self):
         return f"{self.email} ({self.password})"
     
-class Produk(models.Moodel):
+class Produk(models.Model):
     nama_produk = models.CharField(max_length=250)
-    harga = models.PositiveIntegerField()
+    price = models.DecimalField(max_digits=10, decimal_places=2)
     deskripsi_produk = models.TextField()
+    img = models.ImageField((""), upload_to=None, height_field=None, width_field=None, max_length=None)
 
     def __str__(self):
         return f"{self.nama_produk} ({self.harga})"
