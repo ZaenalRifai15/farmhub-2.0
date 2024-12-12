@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Beranda</title>
     {% load static %}
-    <link rel="stylesheet" href="{% static 'css/beranda.css' %}">
+    <link rel="stylesheet" href="{% static 'app/css/beranda.css' %}">
 </head>
 <body>
     <header>
@@ -19,9 +20,9 @@
     </header>
     <main>
         <section class="welcome">
-            <h2>Hallo, <span id="user-name">user</span></h2>
+            <h2>Hallo, <span class="user-name">user</span></h2>
             <p>Selamat datang di FarmHub.</p>
-            <input type="text" placeholder="Cari yang kamu perlukan" id="search-bar">
+            <input type="text" placeholder="Cari yang kamu perlukan" class="search-bar">
         </section>
 
         <section class="product-section">
@@ -29,10 +30,26 @@
             <div class="product-grid" id="terdekat-products"></div>
         </section>
 
+
+        <div  class="card">
+            <img src= {% static 'app/img/Snapinsta.app_455600846_424069483369737_7612312002177892980_n_1080.jpg' %} class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Nama Produk</h5>
+            </div>
+            <ul class="list-group">
+              <li class="list-group-item">1 kg</li>
+              <li class="harga">RP.5000</li>
+            </ul>
+          </div>
+
+
+
         <section class="product-section">
             <h3>Paling Laku <a href="#" class="see-all">Lihat Semua</a></h3>
             <div class="product-grid" id="paling-laku-products"></div>
         </section>
+
+
     </main>
 </body>
 
